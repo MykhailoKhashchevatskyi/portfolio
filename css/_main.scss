@@ -89,3 +89,142 @@
     }
   }
 }
+
+/////
+
+
+.qsts {
+  padding: 90px 0;
+		&__container {
+		}
+
+		&__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+		}
+
+		&__animation {
+      align-self: flex-end;
+      transform: translatex(-100px);
+      @media (max-width: 800px) {
+        align-self: center;
+        transform: translatex(0);
+        margin-bottom: 40px;
+      }
+		}
+
+		&__title {
+      font-size: 30px;
+      align-self: flex-start;
+      @media (max-width: 800px) {
+        font-size: 24px;
+      }
+		}
+
+		&__text {
+      color: #636262;
+      text-align: justify;
+      font-size: 22px;
+      @media (max-width: 800px) {
+        align-self: center;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+      }
+		}
+}
+
+///// projects
+
+
+
+
+.projects {
+  overflow-y: auto;
+  display: flex;
+
+  background-color: #34547A;
+  padding: 50px 0;
+		&__wrapper {
+		}
+
+		&__cardbox {
+		}
+}
+.card-box {
+  width: 1100px;
+  height: 250px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+		&__item {
+      cursor: pointer;
+		}
+}
+
+
+
+.card {
+  width: 190px;
+  height: 120px;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.747);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid rgba(37, 0, 0, 0.44);
+  border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+  transform: skewX(10deg);
+  transition: .4s;
+  overflow: hidden;
+  color: #855feeb0;
+}
+
+.card:hover {
+  height: 254px;
+  transform: skew(0deg);
+}
+
+.align {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: flex-start;
+}
+
+.red {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff605c;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.yellow {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffbd44;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.green {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00ca4e;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.151);
+}
+
+.card h1 {
+  text-align: center;
+  margin: 1.3rem;
+  color: #855feeb0;
+  text-shadow: -10px 5px 10px rgba(184, 168, 168, 0.267);
+}
+
