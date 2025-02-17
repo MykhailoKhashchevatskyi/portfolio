@@ -249,14 +249,14 @@ html {
 .hero__wrapper {
   padding: 125px 0 65px 0;
   display: flex;
-  gap: 65px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 800px) {
   .hero__wrapper {
     padding: 85px 0 30px;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 5px;
   }
@@ -388,12 +388,17 @@ html {
   padding: 50px 0;
 }
 .card-box {
-  width: 1100px;
   height: 250px;
   display: flex;
   gap: 80px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+@media (max-width: 1100px) {
+  .card-box {
+    width: 1100px;
+    justify-content: center;
+  }
 }
 .card-box__item {
   cursor: pointer;
@@ -403,7 +408,6 @@ html {
   width: 190px;
   height: 120px;
   padding: 0.5rem;
-  background: rgba(255, 255, 255, 0.747);
   border-radius: 8px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -414,6 +418,27 @@ html {
   transition: 0.4s;
   overflow: hidden;
   color: rgba(133, 95, 238, 0.6901960784);
+}
+
+.site-1 {
+  background: url(../img/site1.PNG);
+  background-size: 100%;
+}
+
+.site-2 {
+  background: url(../img/site2.PNG) no-repeat;
+  background-size: 100%;
+  border-left: 2px rgba(43, 27, 27, 0.545) outset;
+}
+
+.site-3 {
+  background: url(../img/site3.PNG);
+  background-size: 100%;
+}
+
+.site-4 {
+  background: url(../img/site4.PNG);
+  background-size: 100%;
 }
 
 .card:hover {
@@ -427,30 +452,6 @@ html {
   flex-direction: row;
   gap: 5px;
   align-self: flex-start;
-}
-
-.red {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ff605c;
-  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.13);
-}
-
-.yellow {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ffbd44;
-  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.164);
-}
-
-.green {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #00ca4e;
-  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.151);
 }
 
 .card h1 {
