@@ -1,0 +1,41 @@
+.footer {
+  background-color: #34547A;
+  padding: 50px 0;
+		&__container {
+		}
+
+		&__wrapper {
+      display: flex;
+      justify-content: space-around;
+		}
+
+		&__menu {
+      color: #fafafa;
+		}
+
+
+		&__logo {
+		}
+
+		&__telegram {
+      cursor: pointer;
+      max-width: 30px;
+      @media (max-width: 800px) {
+        align-self: flex-end;
+      }
+		}
+}
+.menu2-list {
+  display: flex;
+  gap: 20px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 5px;
+  }
+		&__item {
+      cursor: pointer;
+      text-transform: lowercase;
+		}
+}
+.telegram {
+}

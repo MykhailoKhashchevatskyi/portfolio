@@ -15,3 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.remove("no-scroll");
   });
 });
+
+
+function scrollToBlock() {
+  document.getElementById("targetBlock").scrollIntoView({ behavior: "smooth" });
+}

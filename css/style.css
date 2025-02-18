@@ -472,12 +472,12 @@ html {
 }
 
 .arrow {
-  width: 848.6562942008px;
+  width: 21.216407355px;
   height: 20px;
   background: repeating-linear-gradient(135deg, #ffffff 0 15px, rgba(0, 0, 0, 0) 0 20px) left top, repeating-linear-gradient(45deg, #ffffff 0 15px, rgba(0, 0, 0, 0) 0 20px) left bottom;
   background-size: 300% 50%;
   background-repeat: no-repeat;
-  animation: i4 50s infinite linear;
+  animation: i4 5s infinite linear;
   transform: rotate(180deg);
 }
 
@@ -741,6 +741,104 @@ html {
     opacity: 1;
   }
 }
+.price {
+  background-color: #EEEFF1;
+  padding: 50px 0;
+}
+@media (max-width: 800px) {
+  .price {
+    overflow-y: auto;
+  }
+}
+.price__title {
+  margin-bottom: 50px;
+}
+@media (max-width: 800px) {
+  .price__wrapper {
+    width: 950px;
+  }
+}
+.card-boks {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+@media (max-width: 800px) {
+  .card-boks {
+    justify-content: center;
+  }
+}
+.card-boks__item {
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  gap: 10px;
+  text-transform: uppercase;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+}
+.card-boks__title {
+  font-size: 30px;
+}
+.info-q {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.info-q__text {
+  max-width: 820px;
+  font-size: 27px;
+  font-weight: 600;
+  margin: 0 0 50px 0;
+}
+@media (max-width: 800px) {
+  .info-q__text {
+    font-size: 23px;
+  }
+}
+
+.footer {
+  background-color: #34547A;
+  padding: 50px 0;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.footer__menu {
+  color: #fafafa;
+}
+.footer__telegram {
+  cursor: pointer;
+  max-width: 30px;
+}
+@media (max-width: 800px) {
+  .footer__telegram {
+    align-self: flex-end;
+  }
+}
+
+.menu2-list {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 800px) {
+  .menu2-list {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.menu2-list__item {
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
 /* From Uiverse.io by jeremyssocial */
 @keyframes blinkCursor {
   50% {

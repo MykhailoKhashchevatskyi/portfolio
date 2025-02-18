@@ -11,15 +11,15 @@
     <header class="header">
         <div class="header__container">
           <div class="header__wrapper">
-            <div class="header__image">
+            <div class="header__image" onclick="location.href='#hero'">
               <img src="./img/logo.svg" alt="logo" class="header__logo">
             </div>
             <nav class="header__navigation">
               <ul class="header__menu menu-list">
-                <li class="menu-list__item">Головна</li>
-                <li class="menu-list__item">З чого почати?</li>
-                <li class="menu-list__item">Проєкти</li>
-                <li class="menu-list__item">Прайс</li>
+                <li class="menu-list__item" onclick="location.href='#hero'" >Головна</li>
+                <li class="menu-list__item" onclick="location.href='#qsts'" >З чого почати?</li>
+                <li class="menu-list__item" onclick="location.href='#projects'" >Проєкти</li>
+                <li class="menu-list__item" onclick="location.href='#price'" >Прайс</li>
               </ul>
             </nav>
             <button class="header__button">Консультація</button>
@@ -33,7 +33,7 @@
     </header>
     <main class="main">
       <div class="wrapper">
-        <section class="hero">
+        <section class="hero" id="hero">
           <div class="hero__container">
             <div class="hero__wrapper">
               <div class="hero__picture">
@@ -57,7 +57,7 @@
             </div>
           </div>
         </section>
-        <section class="qsts">
+        <section class="qsts" id="qsts">
           <div class="qsts__container">
             <div class="qsts__wrapper">
               <div class="qsts__animation">
@@ -77,7 +77,7 @@
             </div>
           </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
           <div class="projects__container">
             <div class="projects__wrapper">
               <div class="projects__title">
@@ -161,9 +161,55 @@
             </div>
           </div>
         </section>
+        <section class="price" id="price">
+          <div class="price__container">
+            <h2 class="price__title">Прайс</h2>
+            <div class="price__wrapper">
+              <div class="price__cards card-boks">
+                <div class="card-boks__item">
+                  <h3 class="card-boks__title">Standart</h3>
+                  <p class="card-boks__price">від 90$</p>
+                  <p class="card-boks__text">Розробка сайту за готовими макетами</p>
+                </div>
+                <div class="card-boks__item">
+                  <h3 class="card-boks__title">Designed</h3>
+                  <p class="card-boks__price">від 250$</p>
+                  <p class="card-boks__text">Створення особливого дизайну та розробка сайту</p>
+                </div>
+                <div class="card-boks__item">
+                  <h3 class="card-boks__title">Marketing</h3>
+                  <p class="card-boks__price">від 1200$</p>
+                  <p class="card-boks__text">Розробка повноцінного інтернет-магазину</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="info-q">
+          <div class="info-q__container">
+            <div class="info-q__wrapper">
+              <p class="info-q__text">Для більш детальної інформації зв`яжіться з нами і ми знайдемо ідельний баланс якості та продуктивності!</p>
+              <button class="info__button">Консультація</button>   
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__wrapper">
+          <ul class="footer__menu menu2-list">
+            <li class="menu2-list__item" onclick="location.href='#hero'" >Головна</li>
+            <li class="menu2-list__item" onclick="location.href='#qsts'" >З чого почати?</li>
+            <li class="menu2-list__item" onclick="location.href='#projects'" >Проєкти</li>
+            <li class="menu2-list__item" onclick="location.href='#price'" >Прайс</li>
+          </ul>         
+          <div class="footer__telegram">
+            <img src="./img/telegram.webp" alt="ico" class="telegram">
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="./js/script.js"></script>
 </body>
