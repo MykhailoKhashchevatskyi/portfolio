@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 
-/* Указываем box sizing */
 *,
 *::before,
 *::after {
@@ -84,20 +82,34 @@ select {
 }
 
 html {
-  font-family: Montserrat;
-  background-color: #F9F9F9;
+  font-family: "Bebas Neue Pro";    
+  background: #000;
+  color: #fff;
 }
 
-[class$="__container"] {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 50px;
-  @media (max-width:1200px) {
-    padding: 0 20px;
+.container {
+  max-width: 1120px;
+  @media (max-width: 1500.89px) {
+    max-width: 1120px;
+    padding: 0 130px;
   }
+  @media (max-width: 1280.89px) {
+    padding: 0 130px;
+  }
+  @media (max-width: 744.89px) {
+    max-width: 744px;
+    padding: 0 96px;
+  }
+  @media (max-width: 744.89px) {
+    max-width: 744px;
+    padding: 0 36px;
+  }
+  @media (max-width: 360.89px) {
+    max-width: 360px;
+    padding: 0 36px;
+  }
+  margin: 0 auto;
 }
-
-
 
 
 html{

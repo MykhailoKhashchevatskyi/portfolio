@@ -1,41 +1,316 @@
 .footer {
-  background-color: #34547A;
-  padding: 50px 0;
-		&__container {
-		}
-
-		&__wrapper {
-      display: flex;
-      justify-content: space-around;
-		}
-
-		&__menu {
-      color: #fafafa;
-		}
-
-
-		&__logo {
-		}
-
-		&__telegram {
-      cursor: pointer;
-      max-width: 30px;
-      @media (max-width: 800px) {
-        align-self: flex-end;
-      }
-		}
-}
-.menu2-list {
   display: flex;
-  gap: 20px;
-  @media (max-width: 800px) {
-    flex-direction: column;
-    gap: 5px;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/footer-image.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  button,
+  input,
+  textarea,
+  select {
+    outline: none;
+    box-shadow: none;
+    border: none; // якщо треба повністю чисто
   }
-		&__item {
-      cursor: pointer;
-      text-transform: lowercase;
-		}
+
+  button:focus,
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    box-shadow: none;
+    border: none; // або залиш свій border
+  }
+
+
+  &__wrapper {
+    width: 100%;
+    height: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    @media (max-width: 520px) {
+      padding: 0 0 50px 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1525px) {
+      flex-direction: column;
+      gap: 56px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &__content-item {
+  }
+
+  &__title {
+    color: #FFF;
+
+    /* desktop/header-1 */
+    font-family: "Bebas Neue Pro";
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 85%; /* 78.2px */
+    text-transform: uppercase;
+    width: 523px;
+    margin: 0 0 24px 0;
+    @media (max-width: 1589px) {
+      width: 444px;
+    }
+    @media (max-width: 520px) {
+      color: #FFF;
+      text-align: center;
+      
+      /* mobile/header-1 */
+      font-family: "Bebas Neue Pro";
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 85%; /* 40.8px */
+      text-transform: uppercase;
+      max-width: 234px;
+    }
+  }
+
+  &__subtitle {
+    color: #FFF;
+
+    /* desktop/header-5 */
+    font-family: "Bebas Neue Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
+    text-transform: uppercase;
+    @media (max-width: 520px) {
+      color: #FFF;
+      text-align: center;
+      
+      /* mobile/header-5 */
+      font-family: "Bebas Neue Pro";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 24px */
+      text-transform: uppercase;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex: 1 0 444px;
+    flex-direction: column;
+    border-radius: 10px;
+    background: var(--base-100_10, rgba(255, 255, 255, 0.10));
+    backdrop-filter: blur(12px);
+    padding: 2px;
+    gap: 2px;
+    @media (max-width: 1525px){
+      flex: 1 0 100%;
+    }
+  }
+
+  &__name {
+    background: var(--base-900_50, rgba(0, 0, 0, 0.50));
+    height:48px;
+    color: #FFF;
+    border-radius: 10px 10px 0 0;
+    padding: 0 0 0 16px;
+    &placeholder {
+      background: var(--base-900_50, rgba(0, 0, 0, 0.50));
+    }
+    @media (max-width: 520px){
+      height: 38px;
+    }
+  }
+
+  &__email {
+    background: var(--base-900_50, rgba(0, 0, 0, 0.50));
+    height:48px;
+    color: #FFF;
+    padding: 0 0 0 16px;
+    &placeholder {
+      background: var(--base-900_50, rgba(0, 0, 0, 0.50));
+    }
+    @media (max-width: 520px){
+      height: 38px;
+    }
+  }
+
+  &__textarea-block {
+  }
+
+  &__textarea {
+    background: var(--base-900_50, rgba(0, 0, 0, 0.50));
+    height: 120px;
+    color: #FFF;
+    border-radius: 0 0 10px 10px;
+    padding: 16px;
+    &placeholder {
+      background: var(--base-900_50, rgba(0, 0, 0, 0.50));
+    }
+  }
+
+  &__label {
+    color: var(--base-100_20, rgba(255, 255, 255, 0.20));
+    margin: 3px 0;
+    /* desktop/body-M */
+    font-family: "Bebas Neue Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 120%; /* 19.2px */
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    @media (max-width: 520px) {
+      font-size: 12px;
+    }
+  }
+
+  &__check-box {
+    background: var(--base-900_50, rgba(0, 0, 0, 0.50));
+    appearance: none;
+    margin: 0 8px 0 0;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.50); // фон чекбоксу
+    cursor: pointer;
+    position: relative;
+
+    &:checked::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 6px;
+      width: 6px;
+      height: 12px;
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+      background: none;
+    }
+    @media (max-width: 520px) {
+      margin: 0 5px 0 0;
+    }
+  }
+
+  &__button {
+    justify-self: flex-end;
+    border-radius: 8px;
+    background: var(--base-900_100, #000);
+    backdrop-filter: blur(12px);
+    color: #FFF;
+    text-transform: uppercase;
+    color: var(--base-100_100, #FFF);
+
+    /* desktop/button */
+    font-family: "Bebas Neue Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 20px */
+    text-transform: uppercase;
+    padding: 12px 0;
+    cursor: pointer;
+    &:hover{
+      background: var(--base-900_100, #ffffff);
+      backdrop-filter: blur(12px);
+      text-transform: uppercase;
+      color: var(--base-100_100, #000000);
+    }
+  }
 }
-.telegram {
+.container {
+}
+
+
+.footer {
+
+  &__contacts {
+    margin: 0 auto;
+    text-align: center;
+    // position: absolute;
+    // bottom: 40px;
+    // left: 50%;
+    // transform: translate(-50%, 0);
+    display: flex;
+    @media (max-width: 520px) {
+      bottom: 60px;
+    }
+  }
+
+  &__fifa-logo {
+    margin: 0 16px 0 0;
+    @media (max-width: 744px) {
+      display: none;
+    }
+  }
+
+  &__icon-block {
+
+  }
+}
+.icon-links {
+  cursor: pointer;
+  &__tm {
+  }
+
+  &__instagram {
+  }
+
+  &__email {
+  }
+}
+.footerlinks {
+
+  &__icon {
+  }
+}
+.footer-links {
+
+  &__icon {
+  }
+}
+
+
+.footer-mark {
+  position: absolute;
+  bottom: 52px;
+  left: 40px;
+  color: var(--base-100_100, #ffffffb6);
+
+  /* desktop/info */
+  font-family: "Bebas Neue Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 16px */
+  text-transform: uppercase;
+  @media (max-width: 979px) {
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 10px;
+  }
+  @media (max-width: 520px) {
+    bottom: 30px;
+    font-size: 12px;
+  }
+  @media (max-width: 445px) {
+    left: 20px;
+    transform: translate(0, 0);
+    bottom: 20px;
+    font-size: 12px;
+  }
 }
